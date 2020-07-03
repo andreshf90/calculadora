@@ -3,9 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:background="@drawable/b79331cc47c6e7f3e4d0752e13e4acf5473a83d7v2_hq"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/b79331cc47c6e7f3e4d0752e13e4acf5473a83d7v2_hq"
+
     tools:context=".MainActivity">
 
 
@@ -15,14 +16,15 @@
         android:layout_margin="20dp"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
+
         <TextView
             android:id="@+id/solucion"
-            android:background="#1000"
-            android:text="0"
-            android:textSize="24sp"
-            android:layout_gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_width="match_parent"/>
+            android:layout_gravity="center"
+            android:background="#830E06"
+            android:text="0"
+            android:textSize="30sp" />
     </LinearLayout>
 
     <LinearLayout

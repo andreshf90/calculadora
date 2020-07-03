@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private double num2 = 0;
     private String symbol;
 
-    private TextView resultado;
+    private TextView solucion;
     private Button Key_Pad0, Key_Pad1, Key_Pad2, Key_Pad3, Key_Pad4, Key_Pad5, Key_Pad6, Key_Pad7, Key_Pad8, Key_Pad9;
     private Button Key_PadResta, Key_PadSuma, Key_PadMultiplicacion, Key_PadDivision, Key_PadBorrar, Key_PadIgual;
 
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        resultado = findViewById(R.id.solucion);
+        solucion = findViewById(R.id.solucion);
 
         Key_Pad0 = findViewById(R.id.num_cero);
         Key_Pad1 = findViewById(R.id.num_uno);
@@ -68,43 +68,43 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.num_cero:
                 numero = numero + "0";
-                resultado.setText(numero);
+                solucion.setText(numero);
                 break;
             case R.id.num_uno:
                 numero = numero + "1";
-                resultado.setText(numero);
+                solucion.setText(numero);
                 break;
             case R.id.num_dos:
                 numero = numero + "2";
-                resultado.setText(numero);
+                solucion.setText(numero);
                 break;
             case R.id.num_tres:
                 numero = numero + "3";
-                resultado.setText(numero);
+                solucion.setText(numero);
                 break;
             case R.id.num_cuatro:
                 numero = numero + "4";
-                resultado.setText(numero);
+                solucion.setText(numero);
                 break;
             case R.id.num_cinco:
                 numero = numero + "5";
-                resultado.setText(numero);
+                solucion.setText(numero);
                 break;
             case R.id.num_seis:
                 numero = numero + "6";
-                resultado.setText(numero);
+                solucion.setText(numero);
                 break;
             case R.id.num_siete:
                 numero = numero + "7";
-                resultado.setText(numero);
+                solucion.setText(numero);
                 break;
             case R.id.num_ocho:
                 numero = numero + "8";
-                resultado.setText(numero);
+                solucion.setText(numero);
                 break;
             case R.id.num_nueve:
                 numero = numero + "9";
-                resultado.setText(numero);
+                solucion.setText(numero);
                 break;
             case R.id.resta:
                 symbol = "-";
@@ -131,22 +131,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 numero = "";
                 num1 = 0;
                 num2 = 0;
-                resultado.setText("0");
+                solucion.setText("0");
                 break;
             case R.id.igual:
                 num2 = Integer.parseInt(numero);
                 switch (symbol){
                     case "+":
-                        resultado.setText("resultado: " + (num1 + num2));
+                        solucion.setText("solucion: " + (num1 + num2));
                         break;
                     case "-":
-                        resultado.setText("resultado: " + (num1 - num2));
+                        solucion.setText("solucion: " + (num1 - num2));
                         break;
                     case "X":
-                        resultado.setText("resultado: " + (num1 * num2));
+                        solucion.setText("solucion: " + (num1 * num2));
                         break;
                     case "/":
-                        resultado.setText("resultado: " + (num1 / num2));
+                        solucion.setText("solucion: " + (num1 / num2));
                         break;
                 }
                 numero = "";
